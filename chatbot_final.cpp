@@ -66,26 +66,26 @@ int main() {
 
         switch (opcion) {
             case 1:
-                mostrarHorario();
-                logOpcion(log, "Cliente consulto contacto.");
-                break;
-            case 2:
-                mostrarContacto();
-                logOpcion(log, "Cliente consulto horario.");
-                break;
-            case 3:
-                mensajeAleatorio();
-                logOpcion(log, "Cliente consulto servicios.");
-                break;
-            case 4:
-                mostrarServicios();
-                logOpcion(log, "Cliente recibio mensaje aleatorio.");
-                break;
-            case 5:
-                cout << "Bot: Gracias por tu visita, " << empresa << ". Hasta luego." << endl;
-                break;
-            default:
-                cout << "Bot: Opcion no valida." << endl;
+        mostrarHorario();
+        logOpcion(log, "Cliente consulto horario.");
+        break;
+    case 2:
+        mostrarContacto();
+        logOpcion(log, "Cliente consulto datos de contacto.");
+        break;
+    case 3:
+        mensajeAleatorio();
+        logOpcion(log, "Cliente recibio mensaje aleatorio.");
+        break;
+    case 4:
+        mostrarServicios();
+        logOpcion(log, "Cliente consulto servicios.");
+        break;
+    case 5:
+        cout << "Bot: Gracias por tu visita, " << nombre << ". Hasta luego." << endl;
+        break;
+    default:
+        cout << "Bot: Opcion no valida." << endl;
         }
     }
 
